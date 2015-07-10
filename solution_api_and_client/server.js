@@ -28,13 +28,13 @@ app.get('/', function (req, res) {
 });
 
 // phrases index
-app.get('/phrases', function (req, res) {
+app.get('api/phrases', function (req, res) {
   // send all phrases as JSON response
   res.json(phrases);
 });
 
 // create new phrase
-app.post('/phrases', function (req, res) {
+app.post('api/phrases', function (req, res) {
   // grab params (word and definition) from form data
   var newPhrase = req.body;
   
